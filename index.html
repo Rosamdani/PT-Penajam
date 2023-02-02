@@ -20,36 +20,6 @@
             border-radius: 100px;
             border-image: linear-gradient(to right, #ffa726, #fb8c00) 10;
         }
-
-        .hero {
-            background-image: url("assets/img/hero.png");
-            background-color: rgba(3, 0, 34, 0.9);
-        }
-
-        .hero::before {
-            content: "";
-            position: absolute;
-            right: 40px;
-            bottom: 100px;
-            width: 70%;
-            height: 70%;
-            background-size: cover;
-            z-index: 10;
-            background-image: url("assets/img/pose_5.png");
-        }
-
-        .hero::after {
-            content: "";
-            position: absolute;
-            left: -40px;
-            bottom: 0px;
-            width: 500px;
-            height: 500px;
-            background-size: cover;
-            z-index: 10;
-            background-color: grey;
-            border-radius: 100%;
-        }
     </style>
 </head>
 
@@ -64,55 +34,79 @@
                 <li
                     class="bg-gradient-to-r px-1 py-1 from-cyan-900 to-[#0066FF] rounded-full max-w-fit flex items-center justify-center max-h-fit mr-3">
                     <a href="#" class=" px-3 py-1 bg-[#030022] rounded-full flex items-center justify-center">About
-                        Us</a></li>
+                        Us</a>
+                </li>
                 <li
                     class="bg-gradient-to-r px-1 py-1 from-cyan-900 to-[#0066FF] rounded-full max-w-fit flex items-center justify-center max-h-fit mr-3">
                     <a href="#"
-                        class=" px-3 py-1 bg-[#030022] rounded-full flex items-center justify-center">Project</a></li>
+                        class=" px-3 py-1 bg-[#030022] rounded-full flex items-center justify-center">Project</a>
+                </li>
                 <li
                     class="bg-gradient-to-r px-1 py-1 from-cyan-900 to-[#0066FF] rounded-full max-w-fit flex items-center justify-center max-h-fit mr-3">
                     <a href="#"
-                        class=" px-3 py-1 bg-[#030022] rounded-full flex items-center justify-center">License</a></li>
+                        class=" px-3 py-1 bg-[#030022] rounded-full flex items-center justify-center">License</a>
+                </li>
             </ul>
         </div>
     </nav>
 
-    <div class="w-full hero lg:h-[550px] md:h-[300px] h-[200px] relative">
-        testing
+    <div class="w-full lg:h-[800px] md:h-[300px] overflow-hidden h-[200px] relative bg-cover"
+        style="background-image: url('assets/img/bg-2.png');">
+        <div class="absolute inset-0 bg-[#030022] bg-opacity-80 flex justify-between">
+            <img src="assets/img/elips-hero.png" alt="">
+            <img src="assets/img/pose_5.png" class="-mb-[100px]" alt="">
+        </div>
+        <div class="absolute inset-0 flex text-white items-center">
+            <div class="block w-[700px] mx-[100px]">
+                <h1 class="text-6xl mb-12">Membangun Lebih Mudah Bersama Kami</h1>
+                <p class="text-2xl w-[600px]">engineering procurement construction,
+                    consultant, marine, network communication, general trading, supplier, services & EO</p>
+            </div>
+        </div>
+
     </div>
 
-    <div class="w-full h-[900px] relative overflow-hidden">
-        <img src="assets/img/pose_7.png" class=" absolute" alt="">
+    <div class="w-full h-[1000px] relative overflow-hidden">
+        <img src="assets/img/pose_7.png" class="-bottom-[260px] absolute" alt="">
         <div class="w-full h-full absolute">
-            <div class="w-[80%] h-full mx-auto py-32">
-                <h1 class="text-3xl text-black font-bold">Tujuan Kami</h1>
-                <p class="my-12 w-[800px] text-lg">Menjadi mitra/partner dalam pembangunan yang handal bagi customer
+            <div class="w-[80%] h-full mx-auto py-32 mb-[200px]">
+                <h1 class="text-6xl text-black font-bold">Tujuan Kami</h1>
+                <p class="my-12 w-[800px] text-2xl">Menjadi mitra/partner dalam pembangunan yang handal bagi customer
                     menuju terbentuknya sebuah perusahaan yang sehat dan berstandar nasional</p>
-                <div class="w-full flex justify-between mt-32">
-                    <div class="w-[450px] h-[400px] mx-2 shadow-lg bg-gray-300 px-5 py-2">
+                <div class="w-full flex justify-between mt-28 text-2xl">
+                    <div class="w-[600px] h-[450px] hover:shadow-xl mx-2 shadow-lg bg-gray-300 px-5 py-2">
                         <p>Menghasilkan nilai tambah (Value) bagi kedua belah pihak baik dari pemilik dana maupun Stake
                             Holder secara berkesinambungan</p>
                     </div>
-                    <div class="w-[450px] h-[400px] mx-2 shadow-lg bg-gray-300 px-5 py-2">
+                    <div class="w-[600px] h-[450px] hover:shadow-xl mx-2 shadow-lg bg-gray-300 px-5 py-2">
                         <p>Menghasilkan produk produk yang handal dan bermutu dalam mewujudkan Customer Satisfaction</p>
                     </div>
-                    <div class="w-[450px] h-[400px] mx-2 shadow-lg bg-gray-300 px-5 py-2">
+                    <div class="w-[600px] h-[450px] hover:shadow-xl mx-2 shadow-lg bg-gray-300 px-5 py-2">
                         <p>Melaksanakan proyek proyek yang tepat waktu,tepat biaya, tepat mutu serta rekayasa
                             engineering yang efisien secara Konsisten dan Transparan</p>
                     </div>
                 </div>
+                <button
+                    class="px-5 py-3 bg-[#030022] text-white rounded-xl shadow-md hover:shadow-2xl float-right mx-[10px] my-5 text-lg">Selengkapnya
+                    <i class="fas fa-angle-right"></i></button>
             </div>
         </div>
     </div>
-    <div class="w-full h-[800px] flex bg-blue-900 overflow-hidden">
-        <img src="assets/img/pose_0018.png" class="-mb-40" alt="">
-        <div class="w-full my-28 mx-16">
-            <h1 class="text-6xl text-blue-500 font-black">Berkarir Bersama Kami</h1>
-            <h1 class="text-6xl text-white font-black">Tantangan Kami, Peluang Anda</h1>
-            <p class="text-gray-400 text-xl w-[600px] mt-16">Kami menerapkan prinsip-prinsip inklusif dan keragaman (Inclusion and Diversity) serta nilai nilai perusahaan kami yaitu Keselamatan, Keunggulan, Respek, Integritas dan Komitmen dalam setiap proses rekrutmen dan penerimaan karyawan agar sejalan dengan prinsip-prinsip perilaku bisnis kami (PBC) dan Kebijakan Perusahaan lainnya</p>
-            <div class="max-w-fit flex max-h-fit items-center mt-10">
-                <img src="assets/img/Convocation capnew1 2.png" class="w-[80px]" alt="">
-                <a href="#" class="text-blue-500 text-xl hover:underline">Daftar Freshgraduate</a>
+    <div class="w-full h-[850px] flex bg-blue-900 overflow-hidden relative bg-no-repeat bg-cover"
+        style="background-image: url('assets/img/bg-1.png');">
+        <div class="absolute inset-0 bg-[#030022] bg-opacity-80 flex justify-around">
+            <img src="assets/img/pose_0018.png" class="-mb-40" alt="">
+            <div class="w-[900px] my-28 mx-16">
+                <h1 class="text-6xl text-blue-500 font-black">Berkarir Bersama Kami</h1>
+                <h1 class="text-6xl text-white font-black">Tantangan Kami, Peluang Anda</h1>
+                <p class="text-gray-400 text-xl w-[600px] mt-16">Kami menerapkan prinsip-prinsip inklusif dan keragaman
+                    (Inclusion and Diversity) serta nilai nilai perusahaan kami yaitu Keselamatan, Keunggulan, Respek,
+                    Integritas dan Komitmen dalam setiap proses rekrutmen dan penerimaan karyawan agar sejalan dengan
+                    prinsip-prinsip perilaku bisnis kami (PBC) dan Kebijakan Perusahaan lainnya</p>
+                <div class="max-w-fit flex max-h-fit items-center mt-10">
+                    <img src="assets/img/Convocation capnew1 2.png" class="w-[80px]" alt="">
+                    <a href="#" class="text-blue-500 text-xl hover:underline">Daftar Freshgraduate</a>
+                </div>
             </div>
         </div>
     </div>
@@ -136,9 +130,15 @@
                 <ul>
                     <li class="mb-20 font-semibold">Terhubung Dengan Kami</li>
                     <li class="mb-3 text-white font-light flex">
-                        <a href="#" class="px-3 py-1 text-white hover:bg-slate-300 border flex items-center max-w-fit mr-1 rounded"><img src="assets/img/fb.png" alt=""></a>
-                        <a href="#" class="px-3 py-1 text-white hover:bg-slate-300 border flex items-center max-w-fit mr-1 rounded"><img src="assets/img/ig.png" alt=""></a>
-                        <a href="#" class="px-3 py-1 text-white hover:bg-slate-300 border flex items-center max-w-fit mr-1 rounded"><img src="assets/img/yt.png" alt=""></a>
+                        <a href="#"
+                            class="px-3 py-1 text-white hover:bg-slate-300 border flex items-center max-w-fit mr-1 rounded"><img
+                                src="assets/img/fb.png" alt=""></a>
+                        <a href="#"
+                            class="px-3 py-1 text-white hover:bg-slate-300 border flex items-center max-w-fit mr-1 rounded"><img
+                                src="assets/img/ig.png" alt=""></a>
+                        <a href="#"
+                            class="px-3 py-1 text-white hover:bg-slate-300 border flex items-center max-w-fit mr-1 rounded"><img
+                                src="assets/img/yt.png" alt=""></a>
                     </li>
                 </ul>
             </div>
